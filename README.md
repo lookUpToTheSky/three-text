@@ -1,9 +1,9 @@
 # three-3d-text
 ## 基于three.js 对CSS3DRenderer.js再次封装，
-优化结果：
+#### 优化结果：
 1.创建的文本对象能够被射线检测到，可添加事件。 
 2.可和场景物体交替，使文本更具3d效果
-缺点：
+#### 缺点：
 1.文本不可透明
 
 ### 安装：
@@ -16,7 +16,7 @@
 ```
     //初始化
     const element = document.getElementById('three-view');
-    const textRenderer = new TextRenderer();
+    const textRenderer = new Text3DRenderer();
     element.appendChild(textRenderer.domElement);
     textRenderer.setSize(element.clientWidth, element.clientHeight);
 
